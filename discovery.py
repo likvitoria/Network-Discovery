@@ -62,13 +62,6 @@ def searchManufacturer(result):
     return result
 
 
-  
-def display_result(result):
-
-    print("---------------------------------------------------------------------------\nIP Address\tMAC Address\tCOLLECTION FIRST\tMANUFACTURER\n---------------------------------------------------------------------------")
-    for i in result:
-        print("{}\t{}\t{}\t{}".format(i["ip"], i["mac"], i["CollectionFirst"], i["manufacturer"]))
-
 
 def save_data_to_csv(devices_df):
     print(f'Reading file: ')
@@ -105,4 +98,4 @@ devices_df = pd.DataFrame(devices_almostFinal_list)
 save_data_to_csv(devices_df)
 print(devices_df)
 
-#display_result(devices_almostFinal_list) #display final
+
